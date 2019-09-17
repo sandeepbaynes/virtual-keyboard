@@ -1,0 +1,56 @@
+/* Keypad Main Wrapper */
+
+.vkeyboard-mainwrapper {
+    background-color: #194479;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0px -3px 5px #333;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding:15px 10px 0;
+}
+
+/* Key List  */
+
+.vkeyboard-keyset {list-style-type:none;margin:0;padding:0;}
+.vkeyboard-keylist {margin-bottom:15px;}
+.vkeyboard-mainwrapper ul li > button:first-child {margin-left:1.5%;}
+
+/* AlphaNumeric Key */
+
+.vkeyboard-key {
+    border-radius:5px;
+    border:0;
+    font-size:24px;
+    box-shadow:2px 2px 3px #333;
+    margin-left:1.3%;
+    background:url('images/keypad-button-bg.jpg') left bottom repeat-x #F4F4F4;
+    height:60px;  
+    width:7.4%;
+}
+.vkeyboard-key:hover,.vkeyboard-keypressed {box-shadow:1px 1px 3px #333 inset;}
+.vkeyboard-keypressed {background:#BBEBFF !important;}
+
+
+/* Key -- Blue background */
+.vkeyboard-key.nextCancelBtn,
+.vkeyboard-key.vkeyboard-actionkey{background:url('images/keypad-blueBtn-bg.jpg') left bottom repeat-x #82d6fa;}
+.vkeyboard-key.nextCancelBtn {width:11.9%;}
+
+/* Numeric Key */
+.numeric-keypad .vkeyboard-key {width:30%;height:65px;margin-left:3%;font-size:30px;}
+.numeric-keypad .vkeyboard-keylist {margin-bottom:20px;}
+
+/* Decimal Key */
+.decimal-keypad .vkeyboard-key {width:30%;height:55px;margin-left:3%;font-size:30px;}
+.decimal-keypad .vkeyboard-keylist {margin-bottom:20px;}
+.decimal-keypad .vkeyboard-key.decimalZeroBtn {width: 63.4%;}
+/* Portrait Mode */
+@media (min-width: 800px) and (max-width: 1279px) {
+    .alphaNumeric-keypad.vkeyboard-mainwrapper ul li > button:first-child {margin-left:1.2%;}
+    .alphaNumeric-keypad .vkeyboard-key {width: 7.3%;height:90px;}
+    .alphaNumeric-keypad .vkeyboard-key.nextCancelBtn {width:11.8%;}
+    .numeric-keypad .vkeyboard-key {width:29.9%;height:70px;margin-left:3%;}
+    .decimal-keypad .vkeyboard-key.decimalZeroBtn {width: 63.4%;}}
+
