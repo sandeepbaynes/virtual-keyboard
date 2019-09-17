@@ -11,7 +11,7 @@ Usage		: This script appends a keyboard to every input element specified in the 
 			  Layout of the keyboard depends on the vkeyboard attribute specified in the html element.
 			  If no layout is specified in the html element, it takes the layout specified in the layout option
 
-Pre-defined layouts defined based on LCCA SC2 ADL requirements. Modify or use VKeyboard.addLayout to add additional layouts
+Pre-defined layouts defined based on project requirements. Modify or use VKeyboard.addLayout to add additional layouts
 
 Change log 	: 1.1 - Added functionality for caret selection when text range is selected. New text inserted/removed from start position of text range
 			  1.2 - Added new layouts. Handling text range selection replace when range is selected while typing
@@ -990,7 +990,7 @@ VKeyboard.layouts = {
 			container: 'numeric-keypad'
 		}
 	},
-	//QWERTY layout optimized for patient search in SC2 ADL
+	//QWERTY layout optimized for patient search in project
 	'miniQwertySearch':{
 		'normal': ['q w e r t y u i o p -',
 				 'a s d f g h j k l \'',
